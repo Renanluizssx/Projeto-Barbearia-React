@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./stylee.css";
+import "./style.css";
 export default function Page() {
   const [initial, setMode] = useState(true);
   const modeDark = "modo-escuro";
