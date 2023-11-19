@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./style.css";
+import "./stylee.css";
 export default function Page() {
   const [initial, setMode] = useState(true);
   const modeDark = "modo-escuro";
@@ -47,7 +47,7 @@ export default function Page() {
             vários concursos de estilo. Deixe nosso barbeiro ser seu estilista
             pessoal e você nunca ficará desapontado.
           </p>
-          <p className="contract">S. Kelly</p>
+          <p className="nome">S. Kelly</p>
         </section>
       </main>
     </div>

@@ -1,0 +1,54 @@
+@import "./funcoes.scss";
+@import "./variaveis.scss";
+@import "./mediaqueries.scss";
+header {
+  width: $porcent100;
+  max-width: 1024px;
+
+  @include flex(space-between);
+  margin: $margin;
+  div {
+    img {
+      width: 100px;
+    }
+  }
+}
+.modo-claro {
+  @include modoClaro();
+}
+.modo-escuro {
+  @include modoEscuro();
+}
+.Dark {
+  background-color: $preto;
+  color: $branco;
+}
+button {
+  @include estiloBotao();
+}
+.Light {
+  background-color: $branco;
+  color: #000;
+}
+.img-button {
+  width: 25px;
+}
+.first-section {
+  width: $porcent100;
+  height: 324px;
+  @include backgroundSection();
+}
+.second-section {
+  @include estiloSecondEstilo();
+}
+.second-section h1,
+.second-section p {
+  margin: 25px;
+}
+.nome {
+  @include estiloNome();
+}
+
+@include sm(376px, 768px);
+@include md(769px, 1024px);
+@include xs(375px);

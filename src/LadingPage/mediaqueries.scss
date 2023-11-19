@@ -1,0 +1,24 @@
+@mixin xs($tamanhoMaximo) {
+  @media screen and (max-width: $tamanhoMaximo) {
+    header {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+@mixin sm($tamanhoMinimo, $tamanhoMaximo) {
+  @media screen and (min-width: $tamanhoMinimo) and (max-width: $tamanhoMaximo) {
+    header {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+@mixin md($tamanhoMinimo, $tamanhoMaximo) {
+  @media screen and (min-width: $tamanhoMinimo) and (max-width: $tamanhoMaximo) {
+    header {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
