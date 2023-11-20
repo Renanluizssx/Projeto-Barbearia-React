@@ -2,16 +2,7 @@
 @import "./variaveis.scss";
 @import "./mediaqueries.scss";
 header {
-  width: $porcent100;
-  max-width: 1024px;
-
-  @include flex(space-between);
-  margin: $margin;
-  div {
-    img {
-      width: 100px;
-    }
-  }
+  @include estiloHeader();
 }
 .modo-claro {
   @include modoClaro();
@@ -20,26 +11,22 @@ header {
   @include modoEscuro();
 }
 .Dark {
-  background-color: $preto;
-  color: $branco;
+  @include estiloButtonLight();
 }
 button {
   @include estiloBotao();
 }
 .Light {
-  background-color: $branco;
-  color: #000;
+  @include estiloButtonDark();
 }
 .img-button {
   width: 25px;
 }
 .first-section {
-  width: $porcent100;
-  height: 324px;
-  @include backgroundSection();
+  @include estiloPrimeiraSecao();
 }
 .second-section {
-  @include estiloSecondEstilo();
+  @include estiloSegundaSecao();
 }
 .second-section h1,
 .second-section p {
