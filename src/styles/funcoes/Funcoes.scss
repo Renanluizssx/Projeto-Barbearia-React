@@ -22,18 +22,18 @@
   height: $porcent100;
   font-family: $fonteArialHelvetica;
 }
-@mixin estiloPrimeiraSecao() {
+@mixin primeiraSecao() {
   width: $porcent100;
   height: 324px;
   @include backgroundSection();
 }
-@mixin estiloSegundaSecao() {
+@mixin segundaSecao() {
   width: $porcent100;
   max-width: 1100px;
   margin: $margin;
   text-align: center;
 }
-@mixin estiloBotao() {
+@mixin botao() {
   width: 100px;
   height: 50px;
   border-radius: 100px;
@@ -44,12 +44,12 @@
     @include flex(space-around);
   }
 }
-@mixin estiloNome() {
+@mixin nome() {
   font-family: $fonteGreatVibes;
   font-size: 35px;
   color: gold;
 }
-@mixin estiloHeader() {
+@mixin header() {
   width: $porcent100;
   max-width: 1024px;
 
@@ -61,11 +61,17 @@
     }
   }
 }
-@mixin estiloButtonDark() {
+@mixin buttonDark() {
   background-color: $branco;
   color: $preto;
 }
-@mixin estiloButtonLight() {
+@mixin buttonLight() {
   background-color: $preto;
   color: $branco;
+}
+@mixin sectionH1AndP {
+  margin: 25px;
+}
+@mixin imgButton {
+  width: 25px;
 }

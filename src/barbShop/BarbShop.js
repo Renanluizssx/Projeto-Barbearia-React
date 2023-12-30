@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./style.css";
+import "../styles/Style.css";
 export default function Page() {
   const [initial, setMode] = useState(true);
   const modeDark = "modo-escuro";
@@ -9,6 +9,8 @@ export default function Page() {
   const Light = "Assets/sun.png";
   const bDark = "Dark";
   const bLight = "Light";
+  const textoLight = "Light";
+  const textoDark = "Dark";
 
   function Mode() {
     setMode(!initial);
@@ -27,7 +29,7 @@ export default function Page() {
               src={initial ? Light : Dark}
               alt="moon"
             />
-            <span>Dark</span>
+            <span>{initial ? textoLight : textoDark}</span>
           </div>
         </button>
       </header>

@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "./LadingPage";
+import Page from "./barbShop/BarbShop";
 import "./App.css";
 function App() {
   return (

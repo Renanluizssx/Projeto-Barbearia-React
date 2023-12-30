@@ -2,8 +2,9 @@
 @import "./variaveis.scss";
 @import "./mediaqueries.scss";
 header {
-  @include estiloHeader();
+  @include header();
 }
+
 .modo-claro {
   @include modoClaro();
 }
@@ -11,29 +12,29 @@ header {
   @include modoEscuro();
 }
 .Dark {
-  @include estiloButtonLight();
+  @include buttonLight();
 }
 button {
-  @include estiloBotao();
+  @include botao();
 }
 .Light {
-  @include estiloButtonDark();
+  @include buttonDark();
 }
 .img-button {
-  width: 25px;
+  @include imgButton();
 }
 .first-section {
-  @include estiloPrimeiraSecao();
+  @include primeiraSecao();
 }
 .second-section {
-  @include estiloSegundaSecao();
+  @include segundaSecao();
 }
 .second-section h1,
 .second-section p {
-  margin: 25px;
+  @include sectionH1AndP();
 }
 .nome {
-  @include estiloNome();
+  @include nome();
 }
 
 @include sm(376px, 768px);
